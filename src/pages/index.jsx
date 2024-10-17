@@ -1,21 +1,6 @@
-import React from "react";
-import About from "./About";
-import HomeLayout from "./HomeLayout";
-import Landing from "./Landing";
-import Cocktail from "./Cocktail";
-import Newsletter from "./Newsletter";
-
-const index = () => {
-  return (
-    <div>
-      <About />
-      <HomeLayout />
-      <Landing />
-      <Cocktail />
-      <Error />
-      <Newsletter />
-    </div>
-  );
-};
-
-export default index;
+export { default as About } from "./About";
+export { default as HomeLayout } from "./HomeLayout";
+export { default as Landing } from "./Landing";
+export { default as Cocktail } from "./Cocktail";
+export { default as Error } from "./Error";
+export { default as Newsletter } from "./Newsletter";
