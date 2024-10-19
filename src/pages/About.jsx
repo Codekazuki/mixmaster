@@ -4,6 +4,7 @@ import Wrapper from "../assets/wrappers/AboutPage";
 const About = () => {
   return (
     <Wrapper>
+      <h3>About Us</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
         voluptate fuga, beatae unde esse vitae numquam voluptatem recusandae,
