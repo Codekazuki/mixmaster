@@ -23,19 +23,19 @@ const router = createBrowserRouter([
         loader: landingLoader,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
       },
       {
-        path: "/error",
+        path: "error",
         element: <Error />,
       },
       {
-        path: "/cocktail",
+        path: "cocktail/:id",
         element: <Cocktail />,
       },
       {
-        path: "/newsletter",
+        path: "newsletter",
         element: <Newsletter />,
       },
     ],
