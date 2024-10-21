@@ -7,11 +7,11 @@ const CocktailList = ({ drinks }) => {
     return <h4>No drinks</h4>;
   }
   const formattedDrink = drinks.map((item) => {
-    const { srtDrink, srtDrinkThumb, strAlcoholic, strGlass, idDrink } = item;
+    const { strDrink, strDrinkThumb, strAlcoholic, strGlass, idDrink } = item;
     return {
       id: idDrink,
-      name: srtDrink,
-      image: srtDrinkThumb,
+      name: strDrink,
+      image: strDrinkThumb,
       info: strAlcoholic,
       glass: strGlass,
     };
