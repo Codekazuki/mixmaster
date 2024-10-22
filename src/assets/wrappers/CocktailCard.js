@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 const Wrapper = styled.article`
   background: var(--white);
   box-shadow: var(--shadow-2);
@@ -14,6 +14,7 @@ const Wrapper = styled.article`
     border-top-left-radius: var(--borderRadius);
     border-top-right-radius: var(--borderRadius);
   }
+
   .footer {
     padding: 1.5rem;
     h4,
