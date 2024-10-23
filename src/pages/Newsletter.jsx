@@ -1,8 +1,14 @@
 import React from "react";
+import { Form } from "react-router-dom";
+
+export const action = async ({ request }) => {
+  console.log(request);
+  return null;
+};
 
 const Newsletter = () => {
   return (
-    <form className='form'>
+    <Form className='form' method='POST'>
       <h4
         style={{
           textAlign: "center",
@@ -12,7 +18,7 @@ const Newsletter = () => {
       >
         our newsletter
       </h4>
-      <div classNameform-row>
+      <div className='form-row'>
         <label htmlFor='name' className='form-label'>
           name
         </label>
@@ -24,7 +30,7 @@ const Newsletter = () => {
           defaultValue='Ayo'
         />
       </div>
-      <div classNameform-row>
+      <div className='form-row'>
         <label htmlFor='last name' className='form-label'>
           last name
         </label>
@@ -37,7 +43,7 @@ const Newsletter = () => {
         />
       </div>
 
-      <div classNameform-row>
+      <div className='form-row'>
         <label htmlFor='email' className='form-label'>
           email
         </label>
@@ -49,7 +55,16 @@ const Newsletter = () => {
           defaultValue='agbowurotoyin8@gmail.com'
         />
       </div>
-    </form>
+      <button
+        style={{
+          marginTop: "1rem",
+        }}
+        className='btn btn-block'
+        type='submit'
+      >
+        Submit
+      </button>
+    </Form>
   );
 };
 
