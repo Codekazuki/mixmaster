@@ -2,7 +2,9 @@ import React from "react";
 import { Form } from "react-router-dom";
 
 export const action = async ({ request }) => {
-  console.log(request);
+  const formData = await request.formData();
+  const data = Object.fromEntries(formData);
+  console.log(data);
   return null;
 };
 
