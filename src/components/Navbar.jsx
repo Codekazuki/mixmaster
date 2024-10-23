@@ -5,7 +5,10 @@ const Navbar = () => {
   return (
     <Wrapper>
       <div className='nav-center'>
-        <span className='logo'>MixMaster</span>
+        <NavLink to='/'>
+          <span className='logo'>MixMaster</span>
+        </NavLink>
+
         <div className='nav-links'>
           <NavLink to='/' className='nav-link'>
             Home
